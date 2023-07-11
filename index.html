@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="text-container h-100 d-flex align-items-center flex-column py-5"
+      >
+        <h1 class="text-capitalize shadow">quote of the day!</h1>
+        <h3 class="pt-5">Press the button below to recieve a random quote!</h3>
+
+        <button
+          type="button"
+          class="btn btn-lg btn-outline-info text-capitalize btn-1"
+          onclick="getQuote();"
+        >
+          get quote
+        </button>
+
+        <div class="quoteplace">
+          <p class="lead" id="quoteChange">"No Quotes Yet"</p>
+
+          <h2 id="quoteAuthor">Author Name</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
